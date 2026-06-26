@@ -7,3 +7,6 @@ def bar():
 
 def baz():
     print("baz")
+
+def qux():
+    print("qux")
