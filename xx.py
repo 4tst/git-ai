@@ -30,4 +30,7 @@ def hello():
     """
     print("hello world")
 
+def ai_greeting():
+    print("hello from ai")
+
     

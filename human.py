@@ -1,3 +1,5 @@
+def from_human2():
+    print("")
 
 def foo():
     print("foo")
