@@ -18,3 +18,6 @@ def from_human():
 
 def from_ai():
     print("ai generated code")
+
+def edit_in_vscode():
+    print("xxx")
