@@ -10,3 +10,6 @@ def baz():
 
 def qux():
     print("qux")
+
+def from_human():
+    print("xxx")
