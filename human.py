@@ -13,3 +13,6 @@ def qux():
 
 def from_human():
     print("xxx")
+
+def from_ai():
+    print("ai generated code")

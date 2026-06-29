@@ -1,1 +1,2 @@
-git-ai test file - can be deleted after verification
+git-ai test file - modified for attribution testing
+This file has been changed to verify git-ai detection.
