@@ -22,6 +22,9 @@ def divide(a: int, b: int) -> float:
 def is_even(n: int) -> bool:
     return n % 2 == 0
 
+def is_odd(n: int) -> bool:
+    return n % 2 != 0
+
 if __name__ == "__main__":
     print(greet("World"))
     print(f"1 + 2 = {add(1, 2)}")
