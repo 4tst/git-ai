@@ -18,4 +18,4 @@ def test_export():
     pass
 
 # human test line
-# guard test no-daemon
+# test pure fallback
