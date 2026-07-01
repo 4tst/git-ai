@@ -3,3 +3,6 @@ def xxx():
 
 def yyy():
     pass
+
+def xxx():
+    pass
