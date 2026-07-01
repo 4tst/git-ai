@@ -13,3 +13,6 @@ def zz():
 
 def xxx():
     pass
+
+def test_export():
+    pass
