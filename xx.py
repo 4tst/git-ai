@@ -106,6 +106,31 @@ def binary_search(arr: list[int], target: int) -> int:
     return -1
 
 
+class TreeNode:
+    def __init__(self, val: int = 0, left: "TreeNode | None" = None, right: "TreeNode | None" = None):
+        self.val = val
+        self.left = left
+        self.right = right
+
+
+def inorder(root: TreeNode | None) -> list[int]:
+    if not root:
+        return []
+    return inorder(root.left) + [root.val] + inorder(root.right)
+
+
+def preorder(root: TreeNode | None) -> list[int]:
+    if not root:
+        return []
+    return [root.val] + preorder(root.left) + preorder(root.right)
+
+
+def postorder(root: TreeNode | None) -> list[int]:
+    if not root:
+        return []
+    return postorder(root.left) + postorder(root.right) + [root.val]
+
+
 if __name__ == "__main__":
     arr = [3, 1, 4, 1, 5, 9, 2, 6]
     print(f"heap_sort({arr}) = {heap_sort(arr[:])}")
@@ -119,5 +144,10 @@ if __name__ == "__main__":
     l2 = linked_list_from_list([2, 4, 6])
     merged = merge_two_lists(l1, l2)
     print(f"merged: {linked_list_to_list(merged)}")
+
+    root = TreeNode(1, TreeNode(2, TreeNode(4), TreeNode(5)), TreeNode(3, TreeNode(6)))
+    print(f"inorder: {inorder(root)}")
+    print(f"preorder: {preorder(root)}")
+    print(f"postorder: {postorder(root)}")
 
     
