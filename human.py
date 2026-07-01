@@ -6,3 +6,6 @@ def yyy():
 
 def xxx():
     pass
+
+def zzz():
+    pass
