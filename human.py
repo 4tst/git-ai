@@ -1,5 +1,7 @@
 def xx():
     pass
+    print(1111)
+    
 def zz():
     pass
 

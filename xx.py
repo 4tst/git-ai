@@ -30,6 +30,11 @@ def hello():
     """
     print("hello world")
 
+
+def ai_helper():
+    """AI generated utility"""
+    return sum(range(100))
+
 def ai_greeting():
     print("hello from ai")
 
