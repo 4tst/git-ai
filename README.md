@@ -2,6 +2,8 @@
 
 A tool for AI-powered git operations.
 
+随便写的一句话，用于测试提交。
+
 ## Usage
 
 ```bash
