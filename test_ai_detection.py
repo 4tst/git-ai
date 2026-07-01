@@ -34,3 +34,4 @@ def merge_sorted(arr1, arr2):
     return result
 
 x = 1
+y = 2
