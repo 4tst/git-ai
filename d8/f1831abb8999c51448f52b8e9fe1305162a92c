@@ -1,0 +1,19 @@
+ai-test.py
+  s_5ef3014559ef9b::t_5d2cd4fcb37280 87-97
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.5",
+  "base_commit_sha": "d8f1831abb8999c51448f52b8e9fe1305162a92c",
+  "prompts": {},
+  "sessions": {
+    "s_5ef3014559ef9b": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0e2cd4922ffeumiSdPdUEfZU9o",
+        "model": "unknown"
+      },
+      "human_author": "xdewx <present150608@sina.com>"
+    }
+  }
+}
