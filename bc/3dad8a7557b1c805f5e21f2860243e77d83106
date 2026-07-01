@@ -1,0 +1,16 @@
+human.py
+  h_6539c3a3cd32c4 11-13
+.gitignore
+  h_6539c3a3cd32c4 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.5",
+  "base_commit_sha": "bc3dad8a7557b1c805f5e21f2860243e77d83106",
+  "prompts": {},
+  "humans": {
+    "h_6539c3a3cd32c4": {
+      "author": "xdewx <present150608@sina.com>"
+    }
+  }
+}
