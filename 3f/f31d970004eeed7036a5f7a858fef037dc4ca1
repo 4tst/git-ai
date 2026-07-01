@@ -1,0 +1,26 @@
+human.py
+  h_6539c3a3cd32c4 2-4
+xx.py
+  s_94e2c74de211e0::t_d28d8db10d5d8d 56-75
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.5",
+  "base_commit_sha": "3ff31d970004eeed7036a5f7a858fef037dc4ca1",
+  "prompts": {},
+  "humans": {
+    "h_6539c3a3cd32c4": {
+      "author": "xdewx <present150608@sina.com>"
+    }
+  },
+  "sessions": {
+    "s_94e2c74de211e0": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0e272855affejG4na9K60HFKCY",
+        "model": "unknown"
+      },
+      "human_author": "xdewx <present150608@sina.com>"
+    }
+  }
+}
