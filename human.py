@@ -8,3 +8,6 @@ def zz():
     pass
 
 # this line is written by ai
+
+def xxx():
+    pass
