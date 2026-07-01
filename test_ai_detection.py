@@ -32,3 +32,4 @@ def merge_sorted(arr1, arr2):
     result.extend(arr1[i:])
     result.extend(arr2[j:])
     return result
+
