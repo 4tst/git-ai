@@ -84,6 +84,17 @@ def is_anagram(s1: str, s2: str) -> bool:
     return sorted(s1.lower().replace(" ", "")) == sorted(s2.lower().replace(" ", ""))
 
 
+def power(base: int, exp: int) -> int:
+    return base ** exp
+
+
+def is_perfect_square(n: int) -> bool:
+    if n < 0:
+        return False
+    r = int(n ** 0.5)
+    return r * r == n
+
+
 if __name__ == "__main__":
     print(greet("World"))
     print(f"1 + 2 = {add(1, 2)}")
