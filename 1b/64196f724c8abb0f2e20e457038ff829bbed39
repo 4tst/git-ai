@@ -1,0 +1,19 @@
+README.md
+  s_6e90b1b4ee4ac5::t_e2478ede5369fd 5-6
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.5",
+  "base_commit_sha": "1b64196f724c8abb0f2e20e457038ff829bbed39",
+  "prompts": {},
+  "sessions": {
+    "s_6e90b1b4ee4ac5": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0e292760affet08wE71miAX85a",
+        "model": "unknown"
+      },
+      "human_author": "xdewx <present150608@sina.com>"
+    }
+  }
+}
