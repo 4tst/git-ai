@@ -35,3 +35,4 @@ def merge_sorted(arr1, arr2):
 
 x = 1
 y = 2
+z = 3
