@@ -1,0 +1,19 @@
+test_ai_detection.py
+  s_afb9387bd20a69::t_39744c0b6aab66 36
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.5",
+  "base_commit_sha": "548fdc23bd40479a06b7b268a71831137c650163",
+  "prompts": {},
+  "sessions": {
+    "s_afb9387bd20a69": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0e3b26696ffeX8KiEvh28gjULJ",
+        "model": "unknown"
+      },
+      "human_author": "xdewx <present150608@sina.com>"
+    }
+  }
+}
