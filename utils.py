@@ -121,6 +121,26 @@ def deep_merge(base: dict, overlay: dict) -> dict:
     return merged
 
 
+def compact(seq: Iterable) -> list:
+    """Filter out falsy values from an iterable, preserving order."""
+    return [item for item in seq if item]
+
+
+def partition(seq: Iterable, pred: Callable) -> tuple[list, list]:
+    """Split an iterable into two lists by a predicate.
+
+    Returns (true_list, false_list).
+    """
+    true_list = []
+    false_list = []
+    for item in seq:
+        if pred(item):
+            true_list.append(item)
+        else:
+            false_list.append(item)
+    return true_list, false_list
+
+
 if __name__ == "__main__":
     with Timer("test"):
         print(flatten([[1, 2], [3], [4, 5, 6]]))
@@ -128,3 +148,5 @@ if __name__ == "__main__":
         print(unique_by([{"id": 1}, {"id": 2}, {"id": 1}], key=lambda x: x["id"]))
         print(group_by(["apple", "banana", "avocado", "blueberry"], key=lambda s: s[0]))
         print(deep_merge({"a": 1, "b": {"c": 2}}, {"b": {"d": 3}, "e": 4}))
+        print(compact([0, 1, None, 2, "", 3, False, 4]))
+        print(partition([1, 2, 3, 4, 5, 6], pred=lambda x: x % 2 == 0))
