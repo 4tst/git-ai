@@ -83,6 +83,29 @@ def merge_two_lists(l1: ListNode | None, l2: ListNode | None) -> ListNode | None
     return dummy.next
 
 
+def quick_sort(arr: list[int]) -> list[int]:
+    if len(arr) <= 1:
+        return arr
+    pivot = arr[len(arr) // 2]
+    left = [x for x in arr if x < pivot]
+    mid = [x for x in arr if x == pivot]
+    right = [x for x in arr if x > pivot]
+    return quick_sort(left) + mid + quick_sort(right)
+
+
+def binary_search(arr: list[int], target: int) -> int:
+    lo, hi = 0, len(arr) - 1
+    while lo <= hi:
+        mid = (lo + hi) // 2
+        if arr[mid] == target:
+            return mid
+        elif arr[mid] < target:
+            lo = mid + 1
+        else:
+            hi = mid - 1
+    return -1
+
+
 if __name__ == "__main__":
     arr = [3, 1, 4, 1, 5, 9, 2, 6]
     print(f"heap_sort({arr}) = {heap_sort(arr[:])}")
