@@ -1,6 +1,9 @@
 def xx():
     pass
 
+def yy():
+    pass
+
 def from_human2():
     print("")
 
