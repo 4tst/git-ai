@@ -1,3 +1,5 @@
+def xx():
+    pass
 def zz():
     pass
 
