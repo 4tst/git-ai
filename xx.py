@@ -33,4 +33,68 @@ def hello():
 def ai_greeting():
     print("hello from ai")
 
+
+class ListNode:
+    def __init__(self, val: int = 0, next_node: "ListNode | None" = None):
+        self.val = val
+        self.next = next_node
+
+
+def linked_list_from_list(arr: list[int]) -> ListNode | None:
+    dummy = ListNode()
+    cur = dummy
+    for v in arr:
+        cur.next = ListNode(v)
+        cur = cur.next
+    return dummy.next
+
+
+def linked_list_to_list(head: ListNode | None) -> list[int]:
+    result = []
+    while head:
+        result.append(head.val)
+        head = head.next
+    return result
+
+
+def reverse_linked_list(head: ListNode | None) -> ListNode | None:
+    prev = None
+    cur = head
+    while cur:
+        nxt = cur.next
+        cur.next = prev
+        prev = cur
+        cur = nxt
+    return prev
+
+
+def merge_two_lists(l1: ListNode | None, l2: ListNode | None) -> ListNode | None:
+    dummy = ListNode()
+    cur = dummy
+    while l1 and l2:
+        if l1.val <= l2.val:
+            cur.next = l1
+            l1 = l1.next
+        else:
+            cur.next = l2
+            l2 = l2.next
+        cur = cur.next
+    cur.next = l1 or l2
+    return dummy.next
+
+
+if __name__ == "__main__":
+    arr = [3, 1, 4, 1, 5, 9, 2, 6]
+    print(f"heap_sort({arr}) = {heap_sort(arr[:])}")
+
+    head = linked_list_from_list([1, 2, 3, 4, 5])
+    print(f"linked list: {linked_list_to_list(head)}")
+    rev = reverse_linked_list(head)
+    print(f"reversed: {linked_list_to_list(rev)}")
+
+    l1 = linked_list_from_list([1, 3, 5])
+    l2 = linked_list_from_list([2, 4, 6])
+    merged = merge_two_lists(l1, l2)
+    print(f"merged: {linked_list_to_list(merged)}")
+
     
