@@ -92,8 +92,39 @@ def unique_by(seq: Iterable, key: Callable) -> list:
     return result
 
 
+def singleton(cls: type) -> Callable:
+    instances: dict = {}
+
+    @functools.wraps(cls)
+    def get_instance(*args, **kwargs):
+        if cls not in instances:
+            instances[cls] = cls(*args, **kwargs)
+        return instances[cls]
+    return get_instance
+
+
+def group_by(seq: Iterable, key: Callable) -> dict:
+    result = {}
+    for item in seq:
+        k = key(item)
+        result.setdefault(k, []).append(item)
+    return result
+
+
+def deep_merge(base: dict, overlay: dict) -> dict:
+    merged = base.copy()
+    for k, v in overlay.items():
+        if k in merged and isinstance(merged[k], dict) and isinstance(v, dict):
+            merged[k] = deep_merge(merged[k], v)
+        else:
+            merged[k] = v
+    return merged
+
+
 if __name__ == "__main__":
     with Timer("test"):
         print(flatten([[1, 2], [3], [4, 5, 6]]))
-        print(chunked(range(10), 3))
+        print(list(chunked(range(10), 3)))
         print(unique_by([{"id": 1}, {"id": 2}, {"id": 1}], key=lambda x: x["id"]))
+        print(group_by(["apple", "banana", "avocado", "blueberry"], key=lambda s: s[0]))
+        print(deep_merge({"a": 1, "b": {"c": 2}}, {"b": {"d": 3}, "e": 4}))
