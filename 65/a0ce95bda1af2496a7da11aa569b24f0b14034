@@ -1,0 +1,29 @@
+xx.py
+  s_e84e7ca4b963f3::t_086b9d074d4f93 148-151
+  s_e84e7ca4b963f3::t_88eb80e1058e03 109-133
+  s_afb9387bd20a69::t_396a15e77c6961 152
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.5",
+  "base_commit_sha": "65a0ce95bda1af2496a7da11aa569b24f0b14034",
+  "prompts": {},
+  "sessions": {
+    "s_afb9387bd20a69": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0e3b26696ffeX8KiEvh28gjULJ",
+        "model": "unknown"
+      },
+      "human_author": "xdewx <present150608@sina.com>"
+    },
+    "s_e84e7ca4b963f3": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0e29d709fffewswuMi8kKcyQ2a",
+        "model": "unknown"
+      },
+      "human_author": "xdewx <present150608@sina.com>"
+    }
+  }
+}
