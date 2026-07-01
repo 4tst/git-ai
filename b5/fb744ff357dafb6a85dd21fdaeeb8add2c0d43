@@ -1,0 +1,19 @@
+human.py
+  s_94e2c74de211e0::t_c214f07451a395 21
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.5",
+  "base_commit_sha": "b5fb744ff357dafb6a85dd21fdaeeb8add2c0d43",
+  "prompts": {},
+  "sessions": {
+    "s_94e2c74de211e0": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0e272855affejG4na9K60HFKCY",
+        "model": "unknown"
+      },
+      "human_author": "xdewx <present150608@sina.com>"
+    }
+  }
+}
