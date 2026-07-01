@@ -1,0 +1,19 @@
+human.py
+  s_test_ae3f8b2c7d1904::t_test_b1a9c8d7e6f503 15-17
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.5",
+  "base_commit_sha": "e751b85e1592ef820db4c30dbf3d17bca7c1fe03",
+  "prompts": {},
+  "sessions": {
+    "s_test_ae3f8b2c7d1904": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_test_manual_attribution",
+        "model": "deepseek-v4-flash"
+      },
+      "human_author": "xdewx <present150608@sina.com>"
+    }
+  }
+}
