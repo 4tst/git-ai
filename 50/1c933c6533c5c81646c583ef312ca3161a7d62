@@ -1,0 +1,14 @@
+human.py
+  h_6539c3a3cd32c4 4-6
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.5",
+  "base_commit_sha": "501c933c6533c5c81646c583ef312ca3161a7d62",
+  "prompts": {},
+  "humans": {
+    "h_6539c3a3cd32c4": {
+      "author": "xdewx <present150608@sina.com>"
+    }
+  }
+}
