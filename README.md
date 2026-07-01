@@ -52,6 +52,10 @@ git ai log --oneline
 git ai log --raw <commit>
 ```
 
+## Notes
+
+This file is modified by AI for testing purposes.
+
 ## License
 
 MIT
