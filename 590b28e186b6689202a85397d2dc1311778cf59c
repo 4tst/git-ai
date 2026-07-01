@@ -1,0 +1,19 @@
+ai-test.py
+  s_269c8e9afad23f::t_c0d11cd8d55654 28-45,54-55
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.4",
+  "base_commit_sha": "590b28e186b6689202a85397d2dc1311778cf59c",
+  "prompts": {},
+  "sessions": {
+    "s_269c8e9afad23f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0e767f77affeeUPIPnTUUjxfRn",
+        "model": "deepseek-v4-pro"
+      },
+      "human_author": "xdewx <present150608@sina.com>"
+    }
+  }
+}
