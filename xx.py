@@ -31,6 +31,19 @@ def hello():
     print("hello world")
 
 
+def counting_sort(arr):
+    if not arr:
+        return arr
+    max_val = max(arr)
+    counts = [0] * (max_val + 1)
+    for v in arr:
+        counts[v] += 1
+    result = []
+    for i, c in enumerate(counts):
+        result.extend([i] * c)
+    return result
+
+
 def insertion_sort(arr):
     for i in range(1, len(arr)):
         key = arr[i]
