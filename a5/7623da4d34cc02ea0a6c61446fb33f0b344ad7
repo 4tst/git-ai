@@ -1,0 +1,19 @@
+xx.py
+  s_5ef3014559ef9b::t_f2e38213b76664 36-99
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.5",
+  "base_commit_sha": "a57623da4d34cc02ea0a6c61446fb33f0b344ad7",
+  "prompts": {},
+  "sessions": {
+    "s_5ef3014559ef9b": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0e2cd4922ffeumiSdPdUEfZU9o",
+        "model": "unknown"
+      },
+      "human_author": "xdewx <present150608@sina.com>"
+    }
+  }
+}
