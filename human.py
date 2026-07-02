@@ -9,3 +9,6 @@ def xxx():
 
 def zzz():
     pass
+
+def xx():
+    pass
